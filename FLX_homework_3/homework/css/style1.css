@@ -1,0 +1,180 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  background: #ffffff; }
+
+.main-wrapper {
+  margin: auto;
+  max-width: 900px; }
+
+header {
+  background-image: url("../img/header_background_v1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 2; }
+    header .top-wrapper .logo {
+      flex: 1; }
+      header .top-wrapper .logo img {
+        width: 120px; }
+    header .top-wrapper nav {
+      display: flex;
+      padding: 15px;
+      flex: 1;
+      justify-content: space-between; }
+      header .top-wrapper nav a {
+        color: #ececec;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px; }
+  header section {
+    flex: 3;
+    text-align: center; }
+    header section h1 {
+      color: #ececec;
+      text-transform: uppercase;
+      font-size: 16px; }
+    header section .btn-top {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #01acac;
+      padding: 10px 45px;
+      font-size: 10px; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px; }
+
+input {
+  padding: 10px 20px;
+  color: #010f16;
+  border: solid 1px #607d8b; }
+
+.toolbar input::placeholder {
+  color: #010f16;
+  font-size: 15px;
+  padding-left: 3px; }
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px; }
+  .post-list h1 {
+    color: #010f16;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0;
+    padding-right: 10px; }
+  .post-list article {
+    display: flex;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 10px; }
+    .post-list article img {
+      flex: 1; }
+    .post-list article > div {
+      flex: 2;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .post-list article > div .post .post-description {
+        color: #e90303;
+        font-size: 12px;
+        border-bottom: #607d8b 1px solid;
+        padding-bottom: 10px; }
+      .post-list article > div .post h3 {
+        color: #0097a7;
+        text-transform: uppercase;
+        font-size: 16px; }
+      .post-list article > div .post p {
+        color: #010f16;
+        font-size: 12px;
+        line-height: 18px; }
+      .post-list article > div .btn {
+        color: white;
+        background-color: #01acac;
+        font-size: 10px;
+        text-transform: uppercase;
+        padding: 5px 45px; }
+
+section.about h1 {
+  color: #010f16;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 0; }
+section.about p {
+  color: #010f16;
+  margin-top: 0;
+  font-size: 14px; }
+section.about img {
+  width: 100%;
+  margin-bottom: 30px; }
+
+section.contact-form h1 {
+  color: #010f16;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 0; }
+section.contact-form h4 {
+  color: #010f16;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px; }
+section.contact-form form {
+  color: #0097a7;
+  display: flex;
+  flex-direction: column; }
+  section.contact-form form .form-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: right;
+    font-size: 12px; }
+    section.contact-form form .form-row .form-fullname, section.contact-form form .form-row .form-email {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-bottom: 20px; }
+      section.contact-form form .form-row .form-fullname sup, section.contact-form form .form-row .form-email sup {
+        font-size: 14px; }
+      section.contact-form form .form-row .form-fullname input, section.contact-form form .form-row .form-email input {
+        flex: 1;
+        margin-top: 5px; }
+    section.contact-form form .form-row .form-fullname {
+      padding-right: 5px; }
+    section.contact-form form .form-row .form-email {
+      padding-left: 5px; }
+  section.contact-form form .form-column {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 12px; }
+    section.contact-form form .form-column textarea {
+      height: 120px;
+      margin-top: 5px;
+      margin-bottom: 20px; }
+  section.contact-form form button {
+    color: white;
+    background-color: #01acac;
+    align-self: flex-end;
+    text-transform: uppercase;
+    padding: 5px 45px; }
+
+span {
+  text-align: left;
+  font-size: 10px;
+  color: #010f16; }
+
+/*# sourceMappingURL=style1.css.map */

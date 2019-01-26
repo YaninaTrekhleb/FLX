@@ -1,1 +1,259 @@
-// Write your styles here
+body {
+    font-family: $mainFont;
+    background: $mainBackgroundColor;
+}
+
+.main-wrapper {
+    margin: auto;
+    max-width: 900px;
+}
+
+
+header {
+    background-image: $headerBackGround;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 2;
+
+        .logo {
+            flex: 1;
+
+            img {
+                width: 120px;
+            }
+        }
+
+        nav {
+            display: flex;
+            padding: 15px;
+            flex: 1;
+            justify-content: space-between;
+            
+            a {
+                color: $navLinksColor;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+    }
+
+    section {
+        flex: 3;
+        text-align: center;
+
+        h1 {
+            color: $headerTitleColor;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .btn-top {
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: $buttonBackgroundTitleColor;
+            padding: 10px 45px;
+            font-size: 10px;
+        }
+
+    }
+
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+    input {
+    padding: 10px 20px;
+    color: $searchButtonColor;
+    border: solid 1px $searchButtonBorderColor;
+}
+
+.toolbar input::placeholder {
+    color: $searchButtonColor; 
+    font-size: 15px; 
+    padding-left: 3px;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    
+    h1 {
+        color: $blogTitleColor;
+        text-transform: uppercase;
+        text-align: right;
+        margin: 0;
+        padding-right: 10px;
+    }
+      
+    article {
+        display: flex;
+        background-color: $articleBackgroundColor;
+        padding: 10px;
+        margin: 10px;
+
+        img {
+            flex: 1;
+        }
+
+        &>div {
+            flex: 2;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .post {
+
+                .post-description {
+                    color: $postDescriptionColor;
+                    font-size: 12px;
+                    border-bottom: $borderBottomColor 1px solid;
+                    padding-bottom: 10px;
+                }
+
+                h3 {
+                    color: $postDescriptionTitleColor;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                }
+
+                p {
+                    color: $articleParagraphColor;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            
+            .btn {
+                color: white; 
+                background-color: $moreButtonBackgroundColor;
+                font-size: 10px; 
+                text-transform: uppercase;
+                padding: 5px 45px;
+            }
+        }
+
+    }
+}
+
+section.about {
+
+    h1 {
+        color: $blogTitleColor;
+        text-transform: uppercase;
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: $articleParagraphColor;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+section.contact-form {
+
+    h1 {
+        color: $blogTitleColor;
+        text-transform: uppercase;
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        color: $articleParagraphColor;
+        text-transform: uppercase;
+        text-align: right;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    form {
+        color: $contactFormColor;
+        display: flex;
+        flex-direction: column;
+
+        .form-row {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            text-align: right;
+            font-size: 12px;
+
+            .form-fullname, .form-email {
+                display: flex;
+                flex-direction: column;
+                flex: 1; 
+                margin-bottom: 20px;
+                 
+                sup {
+                    font-size: 14px;
+                }
+
+                input {
+                    flex: 1;
+                    margin-top: 5px;
+                }
+            }
+
+            .form-fullname {
+                padding-right: 5px;
+            }
+
+            .form-email {
+                padding-left: 5px;
+            }
+
+        }
+
+        .form-column {
+            display: flex;
+            flex-direction: column; 
+            text-align: right;
+            font-size: 12px;
+
+            textarea {
+                height: 120px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+        }
+
+        button {
+            color: white;
+            background-color: $moreButtonBackgroundColor;
+            align-self: flex-end;
+            text-transform: uppercase;
+            padding: 5px 45px;
+        }
+    }
+}
+
+span {
+    text-align: left;
+    font-size: 10px;
+    color: $articleParagraphColor;
+}
