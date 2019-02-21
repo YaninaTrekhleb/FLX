@@ -1,2 +1,75 @@
-/* Your styles goes here */
+#root {
+    border: 1px solid #333;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+#root a {
+    cursor: pointer;
+}
+
+#root h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#todo-form {
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px; 
+    padding-bottom: 20px; 
+    display: flex;
+}
+
+#todo-form input[name="action"] {
+    flex: 1;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+#todo-form .add {
+    display: flex;
+}
+
+#todo-form .add i {
+    font-size: 2em;
+}
+
+#root .action-list {
+    margin: 0;
+    padding: 0;
+}
+
+#root .action-list li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#root .action-label {
+    flex: 1;
+    margin-left: 10px;
+}
+
+#root .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#root .logo img {
+    height: 60px;
+    width: 60px;
+    margin: auto;
+}
+
+#root .message {
+    margin-bottom: 30px;
+    color: red;
+    text-align: center;
+    display: none;
+}
